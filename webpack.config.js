@@ -1,5 +1,5 @@
 const path = require("path");
-const HtmlWepbackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -26,7 +26,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWepbackPlugin({
+    new HtmlWebpackPlugin({
       template: "./public/index.html",
       filename: "./index.html",
     }),
